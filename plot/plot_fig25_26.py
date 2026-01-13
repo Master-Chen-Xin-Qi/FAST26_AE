@@ -188,23 +188,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # file1 = '../data/plot_files/few_shot/p50_wait_latency.npy'
-    # data = np.load(file1, allow_pickle=True).item()
-    # for k, v in data.items():
-    #     for k2, v2 in v.items():
-    #         if k2 == 'genetic_score':
-    #             vv = v2
-    #     del v['genetic_score']
-    #     v['thinkahead'] = vv
-    # print(len(data))
-    # np.save('../data/plot_files/few_shot/p50_wait_latency.npy', data)
 
-    # file2 = '../data/plot_files/zero_shot/p50_wait_latency.npy'
-    # data = np.load(file2, allow_pickle=True).item()
-    # for k, v in data.items():
-    #     for k2, v2 in v.items():
-    #         if k2 == 'zero_0.1_0.2':
-    #             vv = v2
-    #     del v['zero_0.1_0.2']
-    #     v['thinkahead'] = vv
-    # np.save('../data/plot_files/zero_shot/p50_wait_latency.npy', data)

@@ -1,5 +1,5 @@
 python==3.8.19
 matplotlib==3.7.5
 numpy==1.24.4
-polars==1.36.1
+polars==1.8.2
 tqdm==4.67.1

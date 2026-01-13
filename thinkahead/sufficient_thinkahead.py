@@ -176,7 +176,7 @@ class GeneticAlgorithm:
         self.initialize_population()
         consecutive_num = 0
         eval_num = max(int(len(train_files) * 0.1), 10)
-        logger.info(f'评估文件个数: {eval_num}')
+        logger.info(f'Evaluated file num: {eval_num}')
         for generation in range(generations):
             eval_files = random.sample(train_files, eval_num)
             self.fitness_scores = []

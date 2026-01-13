@@ -36,7 +36,6 @@ def cache_place():
     print(f"Figure saved to {os.path.abspath(save_path)}:1")
 
 def main():
-    # cluster_pattern()
     cache_place()
     
 

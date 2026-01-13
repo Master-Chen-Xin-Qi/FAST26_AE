@@ -1,13 +1,5 @@
 # -*- encoding: utf-8 -*-
 
-# -*- encoding: utf-8 -*-
-'''
-@File      : plot_cluster_bw.py
-@Describe  : 画出几个集群小时级别的带宽变化趋势
-@Time      : 2025/06/04 11:54:26
-@Author    : xinqichen
-'''
-
 import sys
 sys.path.append('..')
 import matplotlib.pyplot as plt

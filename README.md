@@ -82,8 +82,6 @@ Note that all data files used in reproducing the figures are located in the `dat
 
 We also provide the source code and experiment results to reproduce the evaluation figures in our paper as follows:
 
-**Figure 24: Performance across various network bandwidth conditions for public (left) and user-defined (right) image.** Run the following command `python3 plot_fig24.py`, which uses the json files (e.g., `few-shot_lazyload_hit_rate_2MB.json`) of each baseline under different evaluated metrics (e.g., hit rate). The generated figures will be saved in `fig/fig24_a.pdf`, `fig/fig24_b.pdf`, `fig/fig24_c.pdf`, and `fig/fig24_d.pdf`.
-
 **Figure 25: Overall performance with sufficient training data.** Run the following command `python3 plot_fig25_26.py -a lazyload leap random greedy union-min union-avg topn io_count_time_0.5 io_count_two_time_0.5_0.3 thinkahead -bw 2 4 6 8 10 30 50 70 90 150 -m few_shot`, using the result files in `data/plot_files/few_shot`. The generated figure will be saved in `fig/fig25_hit_rate.pdf` and `fig/fig25_p50_wait_latency.pdf`.
 
 **Figure 26: Overall performance for zero-shot scenarios.** Run the following command `python3 plot_fig25_26.py -a lazyload leap random greedy union-min union-avg topn io_count_time_0.5 io_count_two_time_0.1_0.2 thinkahead -bw 2 4 6 8 10 30 50 70 90 150 -m zero_shot`, using the result files in `data/plot_files/zero_shot`. The generated figure will be saved in `fig/fig26_hit_rate.pdf` and `fig/fig26_p50_wait_latency.pdf`.
@@ -100,7 +98,7 @@ We also provide the source code and experiment results to reproduce the evaluati
 
 ### 4.1 Quick Start
 
-Since the entires training procedure takes ~1 day for a single machine, and the trained parameters could be various due to randomness, we provide trained model parameters in the `thinkahead/param` directory to reproduce results.
+Since the entire training procedure takes ~1 day for a single machine, and the trained parameters could be various due to randomness, we provide trained model parameters in the `data/eval_files/params` directory to reproduce results (download the dataset from Tianchi and decompress first).
 
 - To reproduce the overall performance results with sufficient training data of ThinkAhead in the paper (Figure 25), run the following command. The average hit rate and p50 wait latency should be printed out. The running log can be found under `log/sufficient/`, and the results can be found under `result/sufficient`.
 
